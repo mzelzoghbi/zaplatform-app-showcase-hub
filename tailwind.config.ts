@@ -55,10 +55,13 @@ export default {
 				},
 				// ZA Platform custom colors
 				za: {
-					"purple": "#7E69AB",
-					"dark-purple": "#1A1F2C",
-					"light-purple": "#9b87f5",
-					"accent-purple": "#6E59A5",
+					"purple": "#7E69AB", // Keeping this as an alternate color
+					"dark-purple": "#1A1F2C", // Keeping this as an alternate color
+					"light-purple": "#9b87f5", // Keeping this as an alternate color
+					"accent-purple": "#6E59A5", // Keeping this as an alternate color
+					"blue": "#244A6B", // New brand color from logo
+					"dark-blue": "#1E3C56", // Darker shade of the brand color
+					"light-blue": "#325D83", // Lighter shade of the brand color
 				}
 			},
 			borderRadius: {
@@ -95,7 +98,7 @@ export default {
 			},
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-				'za-gradient': 'linear-gradient(135deg, #7E69AB 0%, #6E59A5 100%)',
+				'za-gradient': 'linear-gradient(135deg, #244A6B 0%, #1E3C56 100%)', // Updated gradient with new brand color
 			},
 		}
 	},
