@@ -24,7 +24,7 @@ const AppCard = ({ name, description, imageUrl, appUrl, featured = false, delay 
           className={`w-full h-full object-cover ${featured ? 'md:h-full' : ''}`}
         />
         {featured && (
-          <div className="absolute top-4 left-4 bg-za-purple text-white text-xs uppercase font-bold py-1 px-3 rounded-full">
+          <div className="absolute top-4 left-4 bg-[#244c73] text-white text-xs uppercase font-bold py-1 px-3 rounded-full">
             Featured
           </div>
         )}
@@ -34,7 +34,7 @@ const AppCard = ({ name, description, imageUrl, appUrl, featured = false, delay 
         <h3 className="text-xl font-bold mb-2">{name}</h3>
         <p className="text-gray-600 mb-4">{description}</p>
         <Button 
-          className="w-full bg-za-purple hover:bg-za-accent-purple text-white"
+          className="w-full bg-[#244c73] hover:bg-[#1c3c5c] text-white"
           onClick={() => window.open(appUrl, '_blank')}
         >
           Visit App <ExternalLink className="ml-2 h-4 w-4" />

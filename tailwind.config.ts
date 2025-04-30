@@ -53,15 +53,15 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// ZA Platform custom colors
+				// ZA Platform custom colors - all using the single brand color with various shades
 				za: {
-					"purple": "#7E69AB", // Keeping this as an alternate color
-					"dark-purple": "#1A1F2C", // Keeping this as an alternate color
-					"light-purple": "#9b87f5", // Keeping this as an alternate color
-					"accent-purple": "#6E59A5", // Keeping this as an alternate color
-					"blue": "#244A6B", // New brand color from logo
-					"dark-blue": "#1E3C56", // Darker shade of the brand color
-					"light-blue": "#325D83", // Lighter shade of the brand color
+					"purple": "#244c73", // Updated to brand color
+					"dark-purple": "#1c3c5c", // Darker shade of brand color
+					"light-purple": "#365d85", // Lighter shade of brand color
+					"accent-purple": "#244c73", // Same as brand color
+					"blue": "#244c73", // Brand color
+					"dark-blue": "#1c3c5c", // Darker shade
+					"light-blue": "#365d85", // Lighter shade
 				}
 			},
 			borderRadius: {
@@ -98,7 +98,7 @@ export default {
 			},
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-				'za-gradient': 'linear-gradient(135deg, #244A6B 0%, #1E3C56 100%)', // Updated gradient with new brand color
+				'za-gradient': 'linear-gradient(135deg, #244c73 0%, #1c3c5c 100%)', // Updated gradient with brand color
 			},
 		}
 	},

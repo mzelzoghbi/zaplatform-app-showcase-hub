@@ -22,7 +22,7 @@ const FeaturedApp = () => {
               />
               <div className="text-center">
                 <Button 
-                  className="bg-za-blue hover:bg-za-dark-blue text-white"
+                  className="bg-[#244c73] hover:bg-[#1c3c5c] text-white"
                   onClick={() => window.open('https://zapixel.zaplatform.com', '_blank')}
                 >
                   Visit ZaPixel <ExternalLink className="ml-2 h-4 w-4" />
@@ -37,8 +37,8 @@ const FeaturedApp = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <Card className="border-0 shadow-md">
                   <CardContent className="p-4 flex items-start space-x-3">
-                    <div className="bg-za-blue/10 p-2 rounded-full">
-                      <Image size={20} className="text-za-blue" />
+                    <div className="bg-[#244c73]/10 p-2 rounded-full">
+                      <Image size={20} className="text-[#244c73]" />
                     </div>
                     <div>
                       <h4 className="font-medium">High Quality</h4>
@@ -49,8 +49,8 @@ const FeaturedApp = () => {
                 
                 <Card className="border-0 shadow-md">
                   <CardContent className="p-4 flex items-start space-x-3">
-                    <div className="bg-za-blue/10 p-2 rounded-full">
-                      <ArrowRight size={20} className="text-za-blue" />
+                    <div className="bg-[#244c73]/10 p-2 rounded-full">
+                      <ArrowRight size={20} className="text-[#244c73]" />
                     </div>
                     <div>
                       <h4 className="font-medium">Easy Download</h4>
@@ -61,8 +61,8 @@ const FeaturedApp = () => {
                 
                 <Card className="border-0 shadow-md">
                   <CardContent className="p-4 flex items-start space-x-3">
-                    <div className="bg-za-blue/10 p-2 rounded-full">
-                      <Package size={20} className="text-za-blue" />
+                    <div className="bg-[#244c73]/10 p-2 rounded-full">
+                      <Package size={20} className="text-[#244c73]" />
                     </div>
                     <div>
                       <h4 className="font-medium">Regular Updates</h4>
@@ -73,8 +73,8 @@ const FeaturedApp = () => {
                 
                 <Card className="border-0 shadow-md">
                   <CardContent className="p-4 flex items-start space-x-3">
-                    <div className="bg-za-blue/10 p-2 rounded-full">
-                      <Calendar size={20} className="text-za-blue" />
+                    <div className="bg-[#244c73]/10 p-2 rounded-full">
+                      <Calendar size={20} className="text-[#244c73]" />
                     </div>
                     <div>
                       <h4 className="font-medium">Seasonal Collections</h4>
@@ -92,7 +92,7 @@ const FeaturedApp = () => {
               </p>
               <Button 
                 variant="outline" 
-                className="border-za-blue text-za-blue hover:bg-za-blue hover:text-white"
+                className="border-[#244c73] text-[#244c73] hover:bg-[#244c73] hover:text-white"
                 onClick={() => window.open('https://zapixel.zaplatform.com', '_blank')}
               >
                 Learn More

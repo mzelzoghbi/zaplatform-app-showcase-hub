@@ -22,13 +22,13 @@ const AppShowcase = () => {
           />
           
           <div className="za-card p-6 flex flex-col items-center justify-center text-center fade-in-element" style={{ '--delay': '300ms' } as React.CSSProperties}>
-            <Calendar size={48} className="text-za-purple mb-4" />
+            <Calendar size={48} className="text-[#244c73] mb-4" />
             <h3 className="text-xl font-bold mb-2">Coming Soon</h3>
             <p className="text-gray-600">Our productivity app is in development. Stay tuned!</p>
           </div>
           
           <div className="za-card p-6 flex flex-col items-center justify-center text-center fade-in-element" style={{ '--delay': '500ms' } as React.CSSProperties}>
-            <Package size={48} className="text-za-purple mb-4" />
+            <Package size={48} className="text-[#244c73] mb-4" />
             <h3 className="text-xl font-bold mb-2">Coming Soon</h3>
             <p className="text-gray-600">Something exciting is in the works!</p>
           </div>

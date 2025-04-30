@@ -5,11 +5,11 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="bg-za-dark-purple text-white">
+    <footer className="bg-[#1c3c5c] text-white">
       <div className="container px-4 mx-auto py-12">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
           <div className="mb-8 md:mb-0">
-            <span className="text-2xl font-bold bg-clip-text text-transparent bg-za-gradient">
+            <span className="text-2xl font-bold text-white">
               zaplatform
             </span>
             <p className="text-white/60 mt-2">Beautiful apps for everyday life</p>

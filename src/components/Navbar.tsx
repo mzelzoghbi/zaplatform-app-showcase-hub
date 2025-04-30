@@ -23,13 +23,13 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#apps" className="text-foreground/80 hover:text-za-purple font-medium transition-colors">
+          <a href="#apps" className="text-foreground/80 hover:text-[#244c73] font-medium transition-colors">
             Apps
           </a>
-          <a href="#about" className="text-foreground/80 hover:text-za-purple font-medium transition-colors">
+          <a href="#about" className="text-foreground/80 hover:text-[#244c73] font-medium transition-colors">
             About
           </a>
-          <Button className="bg-za-purple hover:bg-za-accent-purple text-white">
+          <Button className="bg-[#244c73] hover:bg-[#1c3c5c] text-white">
             Contact
           </Button>
         </nav>
@@ -50,20 +50,20 @@ const Navbar = () => {
           <nav className="flex flex-col space-y-4">
             <a 
               href="#apps" 
-              className="text-foreground/80 hover:text-za-purple font-medium transition-colors py-2"
+              className="text-foreground/80 hover:text-[#244c73] font-medium transition-colors py-2"
               onClick={() => setIsMenuOpen(false)}
             >
               Apps
             </a>
             <a 
               href="#about" 
-              className="text-foreground/80 hover:text-za-purple font-medium transition-colors py-2"
+              className="text-foreground/80 hover:text-[#244c73] font-medium transition-colors py-2"
               onClick={() => setIsMenuOpen(false)}
             >
               About
             </a>
             <Button 
-              className="bg-za-purple hover:bg-za-accent-purple text-white w-full"
+              className="bg-[#244c73] hover:bg-[#1c3c5c] text-white w-full"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact

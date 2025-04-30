@@ -14,7 +14,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 10%;
 
-    --primary: 252 68% 74%;
+    --primary: 210 49% 30%; /* Changed to match #244c73 */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 240 5.9% 96%;
@@ -31,7 +31,7 @@
 
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
-    --ring: 252 68% 74%;
+    --ring: 210 49% 30%; /* Changed to match #244c73 */
 
     --radius: 0.75rem;
   }
@@ -46,7 +46,7 @@
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 252 68% 74%;
+    --primary: 210 49% 30%; /* Changed to match #244c73 */
     --primary-foreground: 240 5.9% 10%;
 
     --secondary: 240 3.7% 15.9%;
@@ -87,7 +87,7 @@
   }
 
   .za-hero {
-    @apply bg-gradient-to-br from-za-purple to-za-accent-purple text-white;
+    @apply bg-[#244c73] text-white;
   }
   
   .hover-scale {
