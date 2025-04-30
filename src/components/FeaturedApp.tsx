@@ -1,6 +1,6 @@
 
 import { Button } from '@/components/ui/button';
-import { ArrowRight, ExternalLink } from 'lucide-react';
+import { ArrowRight, ExternalLink, Package, Image, Calendar } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const FeaturedApp = () => {
