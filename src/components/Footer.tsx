@@ -9,9 +9,11 @@ const Footer = () => {
       <div className="container px-4 mx-auto py-12">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
           <div className="mb-8 md:mb-0">
-            <span className="text-2xl font-bold text-white">
-              zaplatform
-            </span>
+            <img 
+              src="/lovable-uploads/465314ad-6d44-4d7b-a2f9-30c4defdded4.png" 
+              alt="zaplatform" 
+              className="h-8 mb-2"
+            />
             <p className="text-white/60 mt-2">Beautiful apps for everyday life</p>
           </div>
           
