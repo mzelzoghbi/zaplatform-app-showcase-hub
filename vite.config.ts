@@ -4,14 +4,14 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
+export default defineConfig({
   server: {
     host: "::",
     port: 8080,
   },
   plugins: [
     react(),
-    mode === 'development' &&
+    process.env.NODE_ENV === 'development' &&
     componentTagger(),
   ].filter(Boolean),
   resolve: {
@@ -19,5 +19,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: mode === 'production' ? '/zaplatform-app-showcase-hub/' : '/',
-}));
+  base: process.env.NODE_ENV === 'production' ? '/zaplatform-app-showcase-hub/' : '/',
+});
