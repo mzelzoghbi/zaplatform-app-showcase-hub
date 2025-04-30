@@ -14,7 +14,7 @@ const AppShowcase = () => {
           <AppCard 
             name="ZaPixel Wallpapers"
             description="High-quality wallpapers optimized for all your devices. Customize your screens with stunning imagery from our carefully curated collection."
-            imageUrl="/zaplatform-app-showcase-hub/lovable-uploads/zapixelshowcase.png"
+            imageUrl="/lovable-uploads/zapixelshowcase.png"
             androidUrl="https://play.google.com/store/apps/details?id=com.zaplatform.zapixel"
             appleUrl="https://apps.apple.com/eg/app/zapixel-ai-4k-wallpapers/id6742073049"
             featured={true}

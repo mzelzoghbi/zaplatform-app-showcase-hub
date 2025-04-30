@@ -16,7 +16,7 @@ const FeaturedApp = () => {
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg p-8">
               <div className="bg-gradient-to-br from-[#244c73] to-[#1c3c5c] w-full h-full flex items-center justify-center">
                 <img 
-                  src="/zaplatform-app-showcase-hub/lovable-uploads/favicon.png" 
+                  src="/lovable-uploads/favicon.png" 
                   alt="ZaPlatform" 
                   className="w-40 h-40 object-contain"
                 />
