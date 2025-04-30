@@ -41,6 +41,7 @@ jobs:
         with:
           path: './dist'
           name: github-pages
+          retention-days: 1
 
   deploy:
     environment:
