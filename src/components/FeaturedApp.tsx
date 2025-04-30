@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { ArrowRight, ExternalLink, Package, Image, Calendar } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
@@ -9,17 +8,19 @@ const FeaturedApp = () => {
       <div className="container px-4 mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-16 fade-in-element" style={{ '--delay': '100ms' } as React.CSSProperties}>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">ZaPixel Wallpapers</h2>
-          <p className="text-gray-600">Elevate your device’s look today with ZaPixel—the only wallpaper app you’ll ever need.</p>
+          <p className="text-gray-600">Elevate your device's look today with ZaPixel—the only wallpaper app you'll ever need.</p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div className="space-y-6 fade-in-element" style={{ '--delay': '300ms' } as React.CSSProperties}>
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg p-8">
-              <img 
-                src="/lovable-uploads/zapixelshowcase.png" 
-                alt="ZaPixel App Screenshot" 
-                className="w-full h-auto rounded-lg shadow-md mb-6"
-              />
+              <div className="bg-gradient-to-br from-[#244c73] to-[#1c3c5c] w-full h-full flex items-center justify-center">
+                <img 
+                  src="/zaplatform-app-showcase-hub/lovable-uploads/favicon.png" 
+                  alt="ZaPlatform" 
+                  className="w-40 h-40 object-contain"
+                />
+              </div>
               <div className="flex flex-col items-center space-y-2">
             <Button 
               className="w-48 bg-[#4285F4] hover:bg-[#3367D6] text-white flex items-center justify-center gap-2 py-2"
