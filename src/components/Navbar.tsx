@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center">
           <a href="/" className="flex items-center">
-            <span className="text-2xl font-bold bg-clip-text text-transparent bg-za-gradient">
+            <span className="text-2xl font-bold text-[#244c73]">
               zaplatform
             </span>
           </a>
