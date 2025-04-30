@@ -1,4 +1,3 @@
-
 import AppCard from './AppCard';
 import { Calendar, Image, Package } from 'lucide-react';
 
@@ -15,8 +14,9 @@ const AppShowcase = () => {
           <AppCard 
             name="ZaPixel Wallpapers"
             description="High-quality wallpapers optimized for all your devices. Customize your screens with stunning imagery from our carefully curated collection."
-            imageUrl="https://images.unsplash.com/photo-1533577116850-9cc66cad8a9b?w=800&auto=format&fit=crop"
-            appUrl="https://zapixel.zaplatform.com"
+            imageUrl="/lovable-uploads/zapixelshowcase.png"
+            androidUrl="https://play.google.com/store/apps/details?id=com.zaplatform.zapixel"
+            appleUrl="https://apps.apple.com/eg/app/zapixel-ai-4k-wallpapers/id6742073049"
             featured={true}
             delay={100}
           />

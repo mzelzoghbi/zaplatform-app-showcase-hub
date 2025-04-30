@@ -1,7 +1,6 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Mail } from 'lucide-react';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,16 +9,21 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleContactClick = () => {
+    window.location.href = 'mailto:zaplatform@gmail.com';
+  };
+
   return (
     <header className="sticky top-0 w-full bg-white/80 backdrop-blur-md z-50 shadow-sm">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center">
           <a href="/" className="flex items-center">
             <img 
-              src="/lovable-uploads/465314ad-6d44-4d7b-a2f9-30c4defdded4.png" 
+              src="/lovable-uploads/favicon.png" 
               alt="zaplatform" 
-              className="h-8"
+              className="h-14"
             />
+            <span className="ml-3 text-2xl font-semibold text-[#244c73]">ZaPlatform</span>
           </a>
         </div>
 
@@ -31,7 +35,11 @@ const Navbar = () => {
           <a href="#about" className="text-foreground/80 hover:text-[#244c73] font-medium transition-colors">
             About
           </a>
-          <Button className="bg-[#244c73] hover:bg-[#1c3c5c] text-white">
+          <Button 
+            className="bg-[#244c73] hover:bg-[#1c3c5c] text-white flex items-center gap-2"
+            onClick={handleContactClick}
+          >
+            <Mail className="w-4 h-4" />
             Contact
           </Button>
         </nav>
@@ -65,9 +73,13 @@ const Navbar = () => {
               About
             </a>
             <Button 
-              className="bg-[#244c73] hover:bg-[#1c3c5c] text-white w-full"
-              onClick={() => setIsMenuOpen(false)}
+              className="bg-[#244c73] hover:bg-[#1c3c5c] text-white w-full flex items-center justify-center gap-2"
+              onClick={() => {
+                setIsMenuOpen(false);
+                handleContactClick();
+              }}
             >
+              <Mail className="w-4 h-4" />
               Contact
             </Button>
           </nav>

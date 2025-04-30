@@ -1,4 +1,3 @@
-
 import { User } from 'lucide-react';
 
 const AboutSection = () => {
@@ -13,19 +12,20 @@ const AboutSection = () => {
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 mb-10 md:mb-0 md:pr-8">
             <div className="bg-white rounded-2xl shadow-xl p-8 md:p-10 relative fade-in-element" style={{ '--delay': '100ms' } as React.CSSProperties}>
-              <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-[#244c73] text-white rounded-full p-3">
-                <User size={24} />
+              <div className="absolute -top-7 left-1/2 transform -translate-x-1/2 bg-[#244c73] text-white rounded-full p-0">
+                <img 
+                  src="/lovable-uploads/zak.jpeg" 
+                  alt="Zak" 
+                  className="w-12 h-20 rounded-full object-cover"
+                />
               </div>
-              <h3 className="text-xl font-bold mb-4 mt-4 text-center">The Indie Developer</h3>
+              <h3 className="text-4xl font-bold mb-4 mt-4 text-center">👋🏻</h3>
               <p className="text-gray-600 mb-4">
-                ZaPlatform is a solo indie development studio focused on creating useful and 
-                beautiful applications. As a passionate developer, I strive to build tools 
-                that enhance the digital experience while maintaining high standards of quality 
-                and user experience.
+              Hi, I'm Mohamed El-Zoghbi — You can call me <span className="font-bold">Zak</span>. I'm a software engineer who loves building simple, useful apps that make everyday life a little better. Whether it's a sleek wallpapers app or a tool to solve a small problem, I'm always exploring new ideas and bringing them to life through code.
+
               </p>
               <p className="text-gray-600">
-                Each application is carefully crafted with attention to detail, from conceptualization 
-                to execution. My goal is to create apps that are not only functional but also delightful to use.
+              ZaPlatform is where I share my side projects, experiments, and anything I create along the way.
               </p>
             </div>
           </div>

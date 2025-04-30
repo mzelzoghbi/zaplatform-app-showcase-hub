@@ -1,4 +1,3 @@
-
 import { Mail } from 'lucide-react';
 
 const Footer = () => {
@@ -9,12 +8,15 @@ const Footer = () => {
       <div className="container px-4 mx-auto py-12">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
           <div className="mb-8 md:mb-0">
-            <img 
-              src="/lovable-uploads/465314ad-6d44-4d7b-a2f9-30c4defdded4.png" 
-              alt="zaplatform" 
-              className="h-8 mb-2"
-            />
-            <p className="text-white/60 mt-2">Beautiful apps for everyday life</p>
+            <div className="flex items-center">
+              <img 
+                src="/lovable-uploads/favicon_2.png" 
+                alt="zaplatform" 
+                className="h-12"
+              />
+              <span className="ml-0 text-2xl font-semibold text-white">ZaPlatform</span>
+            </div>
+            <p className="text-white/60 mt-0">Beautiful apps for everyday life</p>
           </div>
           
           <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
@@ -25,7 +27,7 @@ const Footer = () => {
               About
             </a>
             <a 
-              href="mailto:contact@zaplatform.com" 
+              href="mailto:zaplatform@gmail.com" 
               className="flex items-center bg-white/10 hover:bg-white/20 transition-colors px-4 py-2 rounded-full"
             >
               <Mail size={16} className="mr-2" />
@@ -36,7 +38,7 @@ const Footer = () => {
         
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/60 text-sm mb-4 md:mb-0">
-            &copy; {currentYear} ZaPlatform. All rights reserved.
+            &copy; {currentYear} ZaPlatform. All rights reserved. 🇪🇬
           </p>
           
           <div className="flex space-x-6">

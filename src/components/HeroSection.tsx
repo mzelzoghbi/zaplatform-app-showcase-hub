@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 
@@ -35,7 +34,11 @@ const HeroSection = () => {
               <div className="absolute inset-0 bg-white/10 rounded-full blur-3xl transform -translate-x-4 translate-y-4"></div>
               <div className="absolute z-10 w-full h-full rounded-full overflow-hidden border-4 border-white/20 shadow-2xl animate-float">
                 <div className="bg-gradient-to-br from-[#244c73] to-[#1c3c5c] w-full h-full flex items-center justify-center">
-                  <span className="text-4xl font-bold">ZA</span>
+                  <img 
+                    src="/lovable-uploads/favicon.png" 
+                    alt="ZaPlatform" 
+                    className="w-80 h-80 object-contain"
+                  />
                 </div>
               </div>
             </div>

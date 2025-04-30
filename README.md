@@ -71,3 +71,42 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+
+# ZaPlatform App Showcase Hub
+
+A showcase website for ZaPlatform's mobile applications.
+
+## Deployment to GitHub Pages
+
+This project is configured to deploy to GitHub Pages. Here's how to set it up:
+
+1. Create a new repository on GitHub
+2. Push your code to the main branch
+3. Go to your repository settings
+4. Navigate to "Pages" under "Code and automation"
+5. Under "Build and deployment":
+   - Source: Select "GitHub Actions"
+   - Branch: Select "main"
+
+The site will be available at: `https://[your-username].github.io/zaplatform-app-showcase-hub/`
+
+## Local Development
+
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## Features
+
+- Modern, responsive design
+- Showcase for multiple apps
+- Store download buttons
+- Contact functionality
+- Smooth animations
