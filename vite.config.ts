@@ -19,7 +19,7 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: '/zaplatform-app-showcase-hub/',
+  base: '/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
