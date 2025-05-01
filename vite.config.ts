@@ -39,5 +39,9 @@ export default defineConfig({
         entryFileNames: 'assets/[name]-[hash].js',
       },
     },
-  }
+  },
+  preview: {
+    open: true,
+    port: 5000,
+  },
 });
