@@ -14,13 +14,10 @@ const FeaturedApp = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div className="space-y-6 fade-in-element" style={{ '--delay': '300ms' } as React.CSSProperties}>
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg p-8">
-              <div className="bg-gradient-to-br from-[#244c73] to-[#1c3c5c] w-full h-full flex items-center justify-center">
                 <img 
-                  src="/lovable-uploads/favicon.png" 
+                  src="/lovable-uploads/zapixelshowcase.png" 
                   alt="ZaPlatform" 
-                  className="w-40 h-40 object-contain"
-                />
-              </div>
+                  className="w-full h-auto rounded-lg shadow-md mb-6"/>
               <div className="flex flex-col items-center space-y-2">
             <Button 
               className="w-48 bg-[#4285F4] hover:bg-[#3367D6] text-white flex items-center justify-center gap-2 py-2"
