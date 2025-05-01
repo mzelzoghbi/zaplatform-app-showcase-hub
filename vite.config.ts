@@ -25,9 +25,7 @@ export default defineConfig({
     assetsDir: 'assets',
     emptyOutDir: true,
     rollupOptions: {
-      input: {
-        main: path.resolve(__dirname, 'index.html'),
-      },
+
       output: {
         assetFileNames: (assetInfo) => {
           if (assetInfo.name) {
