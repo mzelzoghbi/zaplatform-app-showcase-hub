@@ -62,6 +62,14 @@
   --ki-on-btn: #15130E;
   --ki-line: rgba(251, 243, 228, .16);
 
+  /* Matla room — the icon's night-to-dawn sky, same in both themes */
+  --mt-base: #1E1F5C;
+  --mt-ink: #FFFFFF;
+  --mt-ink-2: rgba(255, 255, 255, .78);
+  --mt-btn: #FFD9A8;
+  --mt-on-btn: #1E1F5C;
+  --mt-line: rgba(255, 255, 255, .16);
+
   --rww: #8E1B2C;           /* RWW's maroon, for the client-work panel */
 
   /* Masarefy room — the app's own teal + cream, same in both themes */
@@ -272,8 +280,7 @@ p { margin: 0; }
 .sec-head .aside { color: var(--ink-3); font-size: .95rem; max-width: 40ch; }
 
 /* ---------- app rooms ---------- */
-/* auto-fit, so the shelf takes another app without a layout change */
-.rooms { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); }
+.rooms { display: grid; gap: 20px; grid-template-columns: repeat(2, 1fr); } /* four apps: 2 x 2, none left alone in a row */
 @media (max-width: 700px) { .rooms { grid-template-columns: 1fr; } }
 .room {
   position: relative; overflow: hidden; isolation: isolate;
@@ -308,6 +315,16 @@ p { margin: 0; }
     var(--ms-base);
   border: 1px solid var(--ms-line);
 }
+.room.mt {
+  --r-ink: var(--mt-ink); --r-ink-2: var(--mt-ink-2); --r-btn: var(--mt-btn); --r-on-btn: var(--mt-on-btn); --r-line: var(--mt-line);
+  --r-bg:
+    radial-gradient(70% 55% at 50% 100%, rgba(227, 154, 122, .55), transparent 70%),
+    linear-gradient(180deg, var(--mt-base), #4B3F9A);
+  border: 1px solid var(--mt-line);
+}
+/* not downloadable yet: the button's shape, but no link and no hover lift */
+.store.soon { cursor: default; opacity: .92; }
+.store.soon:hover { transform: none; }
 .room-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 .room-id { display: flex; align-items: center; gap: 14px; }
 .room-id .ic { width: 64px; height: 64px; border-radius: 15px; box-shadow: 0 2px 10px rgba(0, 0, 0, .14); background: #fff; }

@@ -62,6 +62,14 @@
   --ki-on-btn: #15130E;
   --ki-line: rgba(251, 243, 228, .16);
 
+  /* Matla room — the icon's night-to-dawn sky, same in both themes */
+  --mt-base: #1E1F5C;
+  --mt-ink: #FFFFFF;
+  --mt-ink-2: rgba(255, 255, 255, .78);
+  --mt-btn: #FFD9A8;
+  --mt-on-btn: #1E1F5C;
+  --mt-line: rgba(255, 255, 255, .16);
+
   --rww: #8E1B2C;           /* RWW's maroon, for the client-work panel */
 
   /* Masarefy room — the app's own teal + cream, same in both themes */
@@ -272,8 +280,7 @@ p { margin: 0; }
 .sec-head .aside { color: var(--ink-3); font-size: .95rem; max-width: 40ch; }
 
 /* ---------- app rooms ---------- */
-/* auto-fit, so the shelf takes another app without a layout change */
-.rooms { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); }
+.rooms { display: grid; gap: 20px; grid-template-columns: repeat(2, 1fr); } /* four apps: 2 x 2, none left alone in a row */
 @media (max-width: 700px) { .rooms { grid-template-columns: 1fr; } }
 .room {
   position: relative; overflow: hidden; isolation: isolate;
@@ -308,6 +315,16 @@ p { margin: 0; }
     var(--ms-base);
   border: 1px solid var(--ms-line);
 }
+.room.mt {
+  --r-ink: var(--mt-ink); --r-ink-2: var(--mt-ink-2); --r-btn: var(--mt-btn); --r-on-btn: var(--mt-on-btn); --r-line: var(--mt-line);
+  --r-bg:
+    radial-gradient(70% 55% at 50% 100%, rgba(227, 154, 122, .55), transparent 70%),
+    linear-gradient(180deg, var(--mt-base), #4B3F9A);
+  border: 1px solid var(--mt-line);
+}
+/* not downloadable yet: the button's shape, but no link and no hover lift */
+.store.soon { cursor: default; opacity: .92; }
+.store.soon:hover { transform: none; }
 .room-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 .room-id { display: flex; align-items: center; gap: 14px; }
 .room-id .ic { width: 64px; height: 64px; border-radius: 15px; box-shadow: 0 2px 10px rgba(0, 0, 0, .14); background: #fff; }
@@ -517,8 +534,8 @@ a.lang { display: inline-flex; align-items: center; text-decoration: none; }
     <section class="sec" id="apps" aria-labelledby="h-apps" style="padding-top:0">
       <div class="sec-head">
         <div>
-          <p class="label"><span class="t-en">Out now</span><span class="t-ar" lang="ar">متاح الآن</span></p>
-          <h2 id="h-apps"><span class="t-en">Three apps, free to download</span><span class="t-ar" lang="ar">ثلاثة تطبيقات، التنزيل مجاني</span></h2>
+          <p class="label"><span class="t-en">My apps</span><span class="t-ar" lang="ar">تطبيقاتي</span></p>
+          <h2 id="h-apps"><span class="t-en">Four apps, all free</span><span class="t-ar" lang="ar">أربعة تطبيقات، كلها مجانية</span></h2>
         </div>
       </div>
 
@@ -615,6 +632,33 @@ a.lang { display: inline-flex; align-items: center; text-decoration: none; }
             <div class="phone"><img src="/img/kingiptv-home.jpg" alt="King IPTV's home screen: channels grouped into News, Sport, Movies and Kids" loading="lazy"></div>
           </div>
         </article>
+        <article class="room mt" id="matla" aria-labelledby="h-mt">
+          <div class="room-top">
+            <div class="room-id">
+              <img class="ic" src="/img/matla.png" alt="">
+              <div>
+                <h3 id="h-mt"><span class="t-en">Matla <span class="alt" lang="ar">مطلع</span></span><span class="t-ar" lang="ar">مطلع <span class="alt" lang="en">Matla</span></span></h3>
+                <p class="kind"><span class="t-en">Prayer times, adhan and a Fajr alarm</span><span class="t-ar" lang="ar">مواقيت الصلاة والأذان ومنبّه الفجر</span></p>
+              </div>
+            </div>
+            <p class="rate">
+              <b class="fresh"><span class="t-en">Soon</span><span class="t-ar" lang="ar">قريبًا</span></b>
+              <span><span class="t-en">in TestFlight now</span><span class="t-ar" lang="ar">على TestFlight الآن</span></span>
+            </p>
+          </div>
+          <p class="pitch">
+            <span class="t-en">The Egyptian Survey method by default, an adhan that arrives on time, a real Fajr alarm and the whole mushaf offline. In Arabic, with no ads.</span>
+            <span class="t-ar" lang="ar">طريقة الهيئة المصرية للمساحة افتراضيًا، وأذان في وقته، ومنبّه حقيقي للفجر، والمصحف كاملًا بلا إنترنت. بالعربية، وبلا إعلانات.</span>
+          </p>
+          <div class="room-acts">
+            <span class="store soon"><svg aria-hidden="true"><use href="#g-apple"/></svg><span><small class="t-en">Coming soon to the</small><small class="t-ar" lang="ar">قريبًا على</small><span class="t-en">App Store</span><span class="t-ar" lang="ar">آب ستور</span></span></span>
+            <span class="platforms"><span class="t-en">iPhone · Apple Watch</span><span class="t-ar" lang="ar">آيفون · ساعة Apple</span></span>
+          </div>
+          <a class="site-link" href="https://matla.zaplatform.com/"><span class="t-en">More about Matla</span><span class="t-ar" lang="ar">المزيد عن مطلع</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <div class="stage">
+            <div class="phone"><img src="/img/matla-today.jpg" alt="Matla's Today screen: Cairo, time to Maghrib, today's occasions and the Fajr alarm" loading="lazy"></div>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -625,23 +669,10 @@ a.lang { display: inline-flex; align-items: center; text-decoration: none; }
           <p class="label"><span class="t-en">On the bench</span><span class="t-ar" lang="ar">على طاولة العمل</span></p>
           <h2 id="h-bench"><span class="t-en">What I'm making next</span><span class="t-ar" lang="ar">ما أعمل عليه الآن</span></h2>
         </div>
-        <p class="aside bench-note"><span class="t-en">I update this when something ships. Last update: 25 September 2026.</span><span class="t-ar" lang="ar">أحدّث هذه القائمة مع كل إطلاق. آخر تحديث: ٢٥ سبتمبر ٢٠٢٦.</span></p>
+        <p class="aside bench-note"><span class="t-en">I update this when something ships. Last update: 26 September 2026.</span><span class="t-ar" lang="ar">أحدّث هذه القائمة مع كل إطلاق. آخر تحديث: ٢٦ سبتمبر ٢٠٢٦.</span></p>
       </div>
 
       <ul class="bench">
-        <li class="job">
-          <div class="job-id">
-            <span class="ic-draft" lang="ar">أوان</span>
-            <h3><span class="t-en">Awan <span class="alt" lang="ar">أوان</span></span><span class="t-ar" lang="ar">أوان</span></h3>
-          </div>
-          <p><span class="t-en">Prayer times, without the noise. In Arabic, for Egypt first.</span><span class="t-ar" lang="ar">مواقيت الصلاة، بهدوء ومن غير ضجيج. بالعربية، ولمصر أولًا.</span></p>
-          <ol class="track" aria-label="Stage: designing">
-            <li class="now"><span class="t-en">Design</span><span class="t-ar" lang="ar">تصميم</span></li>
-            <li><span class="t-en">Build</span><span class="t-ar" lang="ar">تطوير</span></li>
-            <li><span class="t-en">Test</span><span class="t-ar" lang="ar">تجربة</span></li>
-            <li><span class="t-en">Live</span><span class="t-ar" lang="ar">متاح</span></li>
-          </ol>
-        </li>
         <li class="job">
           <div class="job-id">
             <img class="ic" src="/img/masarefy.png" alt="">
@@ -716,6 +747,13 @@ a.lang { display: inline-flex; align-items: center; text-decoration: none; }
           <ul>
             <li><a href="https://kingiptv.zaplatform.com"><span class="t-en">Help and questions</span><span class="t-ar" lang="ar">المساعدة والأسئلة</span></a></li>
             <li><a href="https://kingiptv.zaplatform.com/privacy/"><span class="t-en">Privacy policy</span><span class="t-ar" lang="ar">سياسة الخصوصية</span></a></li>
+          </ul>
+        </div>
+        <div class="help-card">
+          <header><img src="/img/matla.png" alt=""><span class="t-en">Matla</span><span class="t-ar" lang="ar">مطلع</span></header>
+          <ul>
+            <li><a href="https://matla.zaplatform.com/#support"><span class="t-en">Help and questions</span><span class="t-ar" lang="ar">المساعدة والأسئلة</span></a></li>
+            <li><a href="https://matla.zaplatform.com/privacy/"><span class="t-en">Privacy policy</span><span class="t-ar" lang="ar">سياسة الخصوصية</span></a></li>
           </ul>
         </div>
         <div class="help-card mail">
