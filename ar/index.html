@@ -394,7 +394,8 @@ p { margin: 0; }
 .track li.now { color: var(--navy); font-weight: 600; }
 .track li.now::before { background: var(--navy); }
 .bench-note { color: var(--ink-3); font-size: .9rem; }
-
+.job-link { display: flex; width: fit-content; align-items: center; gap: 4px; min-height: 44px; margin-top: 2px; color: var(--navy); font-weight: 600; text-decoration: none; }
+.job-link:hover { text-decoration: underline; }
 /* ---------- client work ---------- */
 /* Not a shelf app: nobody can download it, so it gets a quieter panel. */
 .client {
@@ -669,7 +670,7 @@ a.lang { display: inline-flex; align-items: center; text-decoration: none; }
           <p class="label"><span class="t-en">On the bench</span><span class="t-ar" lang="ar">على طاولة العمل</span></p>
           <h2 id="h-bench"><span class="t-en">What I'm making next</span><span class="t-ar" lang="ar">ما أعمل عليه الآن</span></h2>
         </div>
-        <p class="aside bench-note"><span class="t-en">I update this when something ships. Last update: 26 September 2026.</span><span class="t-ar" lang="ar">أحدّث هذه القائمة مع كل إطلاق. آخر تحديث: ٢٦ سبتمبر ٢٠٢٦.</span></p>
+        <p class="aside bench-note"><span class="t-en">I update this when something ships. Last update: 17 October 2026.</span><span class="t-ar" lang="ar">أحدّث هذه القائمة مع كل إطلاق. آخر تحديث: ١٧ أكتوبر ٢٠٢٦.</span></p>
       </div>
 
       <ul class="bench">
@@ -683,6 +684,20 @@ a.lang { display: inline-flex; align-items: center; text-decoration: none; }
             <li class="done"><span class="t-en">Design</span><span class="t-ar" lang="ar">تصميم</span></li>
             <li class="now"><span class="t-en">Build</span><span class="t-ar" lang="ar">تطوير</span></li>
             <li><span class="t-en">Test</span><span class="t-ar" lang="ar">تجربة</span></li>
+            <li><span class="t-en">Live</span><span class="t-ar" lang="ar">متاح</span></li>
+          </ol>
+        </li>
+        <li class="job">
+          <div class="job-id">
+            <img class="ic" src="/img/boxed.png" alt="">
+            <h3>Boxed</h3>
+          </div>
+          <p><span class="t-en">A calm Shikaku logic puzzle for iPhone: split the grid into boxes, each the size of its number. Daily boards, Endless, a Journey and Time trial.</span><span class="t-ar" lang="ar">لغز شيكاكو منطقي وهادئ للآيفون: قسّم الشبكة إلى صناديق، كل صندوق بحجم رقمه. لوحات يومية، وبلا نهاية، ورحلة، وسباق الوقت.</span>
+            <a class="job-link" href="https://boxed.zaplatform.com/"><span class="t-en">Coming soon to the App Store</span><span class="t-ar" lang="ar">قريبًا على آب ستور</span> <span class="arrow" aria-hidden="true">→</span></a></p>
+          <ol class="track" aria-label="Stage: testing">
+            <li class="done"><span class="t-en">Design</span><span class="t-ar" lang="ar">تصميم</span></li>
+            <li class="done"><span class="t-en">Build</span><span class="t-ar" lang="ar">تطوير</span></li>
+            <li class="now"><span class="t-en">Test</span><span class="t-ar" lang="ar">تجربة</span></li>
             <li><span class="t-en">Live</span><span class="t-ar" lang="ar">متاح</span></li>
           </ol>
         </li>
